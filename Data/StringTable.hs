@@ -1,5 +1,6 @@
 {-# LANGUAGE DeriveDataTypeable, TemplateHaskell #-}
 
+
 module Data.StringTable (
 
     StringTable,
