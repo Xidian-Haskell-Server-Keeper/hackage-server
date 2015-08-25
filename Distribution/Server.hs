@@ -92,7 +92,7 @@ defaultServerConfig = do
                       uriAuthority = Just (URIAuth "" hostName (':' : show portnum))
                     },
     confListenOn  = ListenOn {
-                        loPortNum = 8080,
+                        loPortNum = 30011,
                         loIP = "0.0.0.0"
                     },
     confStateDir  = "state",
@@ -352,4 +352,3 @@ tearDownTemp (TempServer tid) = do
     killThread tid
     -- give the server enough time to release the bind
     threadDelay $ 1000000
-
