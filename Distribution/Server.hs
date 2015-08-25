@@ -84,7 +84,7 @@ defaultServerConfig :: IO ServerConfig
 defaultServerConfig = do
   hostName <- getHostName
   dataDir  <- getDataDir
-  let portnum = 8080 :: Int
+  let portnum = 3001 :: Int
   return ServerConfig {
     confVerbosity = Verbosity.normal,
     confHostUri   = nullURI {
