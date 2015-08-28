@@ -92,7 +92,7 @@ defaultServerConfig = do
                       uriAuthority = Just (URIAuth "" hostName (':' : show portnum))
                     },
     confListenOn  = ListenOn {
-                        loPortNum = 30011,
+                        loPortNum = 3001,
                         loIP = "0.0.0.0"
                     },
     confStateDir  = "state",
